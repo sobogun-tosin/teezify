@@ -1,13 +1,13 @@
-## Teezify music app
+# Teezify music app
 
-# React
+## React
 
-# Typescript
+## Typescript
 
-# Firebase
+## Firebase
 
-# Deezy api
+## Deezy api
 
-# Redux
+## Redux
 
-# Redux toolkit
+## Redux toolkit
