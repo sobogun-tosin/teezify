@@ -1,0 +1,14 @@
+@import "../../../../styles/colors";
+
+.AppWrapper {
+  background-color: $dark-5;
+
+  &_container {
+    height: calc(100vh - 100px);
+    display: flex;
+
+    &_content {
+      padding: 40px 40px 0;
+    }
+  }
+}

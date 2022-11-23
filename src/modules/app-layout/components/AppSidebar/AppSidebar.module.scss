@@ -1,0 +1,77 @@
+@import "../../../../styles/colors";
+
+.AppSidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  &_container {
+    position: relative;
+    background-color: $dark-6;
+    max-width: 350px;
+    min-width: 100px;
+    width: 200px;
+    height: 100%;
+    padding: 24px;
+  }
+
+  &_vline {
+    border-right: 1px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100vh - 90px);
+    cursor: col-resize;
+    padding: 5px;
+
+    &:hover {
+      border-color: $dark-2;
+    }
+  }
+
+  &_hline {
+    opacity: 50%;
+    border-top: 1px solid $grey-1;
+    margin: 10px 0;
+  }
+
+  &_bottom {
+    margin-top: 32px;
+  }
+
+  &_item {
+    &:not(:first-of-type) {
+      margin-top: 8px;
+    }
+    color: $theme-white;
+    padding: 5px 10px;
+    opacity: 70%;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 100%;
+    }
+
+    &_active {
+      opacity: 100%;
+    }
+
+    &_text {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+
+      & > svg {
+        font-size: 24px;
+        margin-right: 12px;
+      }
+    }
+
+    & > span {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}

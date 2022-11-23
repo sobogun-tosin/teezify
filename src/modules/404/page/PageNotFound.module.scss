@@ -1,0 +1,25 @@
+.PageNotFound {
+  padding: 0 150px;
+
+  &_nav {
+    height: 80px;
+    display: grid;
+    place-items: center;
+  }
+
+  &_body {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_content {
+      width: 50%;
+
+      &_text {
+        font-size: 40px;
+        font-weight: 500;
+      }
+    }
+  }
+}

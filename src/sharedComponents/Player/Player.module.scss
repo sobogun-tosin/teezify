@@ -1,0 +1,65 @@
+@import "../../styles/colors";
+@import "../../styles/typography";
+
+.Player {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+
+  &_controls {
+    display: flex;
+    grid-gap: 16px;
+    align-items: center;
+
+    &_svg {
+      font-size: 28px;
+      opacity: 70%;
+
+      &:hover {
+        opacity: 100%;
+      }
+
+      &_md {
+        font-size: 32px;
+      }
+
+      &_lg {
+        font-size: 42px;
+        opacity: 100%;
+      }
+
+      &_active {
+        stroke: $green-5;
+        opacity: 100%;
+      }
+    }
+  }
+
+  &_container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+
+    &_count {
+      @include small-text;
+    }
+
+    &_progressbar {
+      height: 5px;
+      border-radius: 4px;
+      width: 100%;
+      background-color: $grey-6;
+      overflow: hidden;
+
+      & > div {
+        background: $grey-2;
+        height: 5px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
